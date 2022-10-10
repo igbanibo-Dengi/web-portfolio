@@ -4,8 +4,7 @@
     box-sizing: border-box;
     list-style: none;
     text-decoration: none;
-    color: rgb(213, 208, 208);
-    font-family: 'Nunito', sans-serif;;
+    font-family: 'Sen', sans-serif;
 }
 
 html{
@@ -17,8 +16,17 @@ body{
     color: #fff;
 }
 
+/* NAVIGATION SECTION */
+
+#header{
+    height: 100vh;
+}
+
+header{
+    padding: 2% 5% 0 5%;
+}
+
 nav{
-    padding: 0 5% 0 2%;
  display: flex;
  align-items: center;
  justify-content: space-between;
@@ -35,8 +43,9 @@ nav ul li{
 }
 
 nav ul li a{
-    font-size: 18px;
+    font-size: 24px;
     position: relative;
+    color: rgb(213, 208, 208);
 }
 
 nav ul li a::after{
@@ -54,6 +63,98 @@ nav ul li a:hover::after{
     width: 100%;
 
 }
+
+
+.main-container{
+    padding: 0 10% 0 10%;
+}
+
+
+/* INTOR SECTION */
+.intro-section{
+    display: block;
+}
+
+.intro{
+    margin-top: 18%;
+}
+
+.intro h1{
+    font-size: 45px;
+    font-weight: 700px;
+    line-height: 1.5;
+    color: rgb(213, 208, 208);
+}
+
+.intro hr{
+    width: 400px;
+    height: 5px;
+    background:  rgb(106, 38, 149);
+    border: none;
+}
+
+.intro-contact{
+    width: 450px;
+   display: flex;
+}
+
+
+.social-icons{
+    margin-top: 30px;
+}
+
+.social-icons a{
+    text-decoration: none;
+    font-size: 30px;
+    margin-right: 15px;
+    color: #ababab;
+    display: inline-block;
+    transition: transform 0.5s;
+}
+
+.social-icons a:hover{
+    color: rgb(106, 38, 149);
+    transform: translateY(-5px);
+}
+
+#resume-btn{
+    background: rgb(106, 38, 149);
+    text-decoration: none;
+    color: white;
+    font-size: 16px;
+    padding: 8px 16px;
+    margin-bottom: 10px;
+    border-radius: 50px;
+    
+}
+
+/* ABOUT SECTION */
+
+/* .about-section{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.about-col-1{
+    flex-basis: 35%;
+}
+.about-col-2{
+    flex-basis: 60%;
+}
+
+.about-col-1 img{
+    width: 100%;
+} */
+
+
+
+
+
+
+
+
+
 
 
 
@@ -75,8 +176,8 @@ nav .fa-solid{
         background: rgb(106, 38, 149);
         position: fixed;
         top: 0;
-        right: -200px;
-        width: 200px;
+        right: -250px;
+        width: 250px;
         height: 100vh;
         padding-top: 50px;
         z-index: 2;
@@ -85,7 +186,7 @@ nav .fa-solid{
 
     nav ul li{
         display: block;
-        margin: 25px;
+        margin: 20px;
     }
 
     nav ul .fa-solid{
@@ -94,7 +195,56 @@ nav .fa-solid{
         left: 25px;
         cursor: pointer;
     }
+
+    /* MEDIA QUERIES FOR INTRO SECTION */
+
+    .intro-contact{
+        display: block  ;
+        width: 450px;
+    }
+
+    .intro h1{
+        font-size: 32px;
+        font-weight: 400px;
+        line-height: 1.5;
+    }
+
+   
+    .intro{
+        margin-top: 35%;
+    }
+
+    .intro hr{
+        width: 270px;
+    }
+    .social-icons{
+        margin-top: 30px;
+    }
+
+
+    /* MEDIA QUERIES FOR ABOUT SECTION */
+
+    .about-col-1{
+        flex-basis: 100%;
+    }
+
+
+
+
+
+
+
 }
 
 
+/* @media screen and (max-width: 470px) {
+    .social-icons{
+        margin-top: 150px;
+    }
 
+    .intro{
+        margin-top: 65%;
+    }
+
+  
+} */
