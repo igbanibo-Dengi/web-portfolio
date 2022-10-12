@@ -13,7 +13,7 @@ html{
 
 body{
     color: #fff;
-   background: #000000;
+   background: #0b0b0b;
     background-size: 300% 300%;
     animation: color 12s ease-in-out infinite;
 }
@@ -164,8 +164,6 @@ nav ul li a:hover::after{
 
 .resume a:hover{
     transform: translateY(-5px);
-    color: rgb(106, 38, 149);
-    background: #ababab;
 }
 
 
@@ -179,7 +177,9 @@ nav ul li a:hover::after{
 
 
 /* ABOUT SECTION */
-
+#about{
+    padding-top: 15px;
+}
 .about-section{
     display: flex;
     flex-wrap: wrap;
@@ -202,8 +202,8 @@ nav ul li a:hover::after{
 }
 
 .about-col-1 img{
-    width: 300px;
-    border-radius: 25px;
+    width: 350px;
+    border-radius: 6px;
     align-items: center;
 }
 
@@ -255,13 +255,146 @@ nav ul li a:hover::after{
     margin-top: 10px;
 }
 
+/* PROJECTS SECTION */
+
+#projects-section{
+    margin-top: 70px;
+    padding-top: 30px;
+}
+.projects-space{
+    margin-bottom: 100px;
+}
+.projects{
+    background: rgb(13, 13, 13);
+    border-radius: 6px;
+    backdrop-filter: blur(45px);
+    display: flex;
+    flex-wrap: nowrap;
+    margin-top: 40px;
+    gap: 5%;
+    padding: 30px 5px 5px 10px;
+}
+
+.project-img{
+    flex-basis: 35%;
+    padding: 1%;
+    border-radius: 6px;
+}
+
+.project-img img{
+    width: 600px;
+    border-radius: 16px;
+}
+.project-text{
+    flex-basis: 65%;
+    text-align: left;
+    line-height: 1.5;
+    padding-top: 10px;
+}
+
+.project-text h3,
+.project-text p{
+    margin-bottom: 15px;
+}
+
+.project-text ul li{
+    list-style: inside;
+}
+
+.project-text p span{
+    color: rgb(116, 78, 140);
+    font-size: 16px;
+    font-weight: 700;
+}
+
+.project-link{
+    display: flex;
+    margin-top: 20px;
+    margin-bottom: 25px;
+}
+
+.project-link a{
+    margin-left: 25px;
+    font-size: 24px;
+    font-weight: 700;
+    text-decoration: underline;
+}
 
 
 
+/* CONTACT SECTION */
+
+#contact-section{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    
+    margin-top: 100px;
+}
 
 
+.contact-left{
+    flex-basis: 35%;
+}
 
+.contact-right{
+    flex-basis: 60%;
+}
 
+.contact-left p{
+    margin-top: 30px;
+}
+
+.contact-left p i{
+    color: rgb(106, 38, 149);
+    margin-right: 15px;
+    font-size: 25px;
+}
+
+.social-icons{
+    margin-top: 30px;
+}
+
+.social-icons a{
+    text-decoration: none;
+    font-size: 30px;
+    margin-right: 15px;
+    color: #ababab;
+    display: inline-block;
+    transition: transform 0.5s;
+}
+
+.social-icons a:hover{
+    color: rgb(106, 38, 149);
+    transform: translateY(-5px);
+}
+
+.btn.btn-2{
+    display: inline-block;
+    background:rgb(106, 38, 149) ;
+}
+
+.contact-right form{
+    width: 100%;
+}
+
+form input, form textarea{
+    width: 100%;
+    border: 0;
+    outline: none;
+    background: #262622;
+    padding: 15px;
+    margin: 15px 0;
+    color: #fff;
+    border-radius: 6px;
+}
+
+form .btn-2{
+    padding: 14px 60px;
+    font-size: 18px;
+    margin-top: 20px;
+    cursor: pointer;
+}
 
 
 
@@ -347,7 +480,7 @@ nav .fa-solid{
 
     /* MEDIA QUERIES FOR ABOUT SECTION */
 
-    .about-section{
+    #about-section{
         padding-top: 25px;
         
     }
