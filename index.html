@@ -14,19 +14,21 @@
         <video autoplay loop muted plays-inline class="bg-video" src="images/videos/laptop-bg-video.mp4" type="video/mp4"></video>
 
         <nav>
-            <a href="index.html" id="logo"><img src="./images/logo.png" alt=""></a>
+            <img src="images/logo.png" class="logo">
             <ul id="side-menu">
-                <li><a href="#about">About</a></li>
-                <li><a href="#project-section">Projects</a></li>
-                <li><a href="#contact-section">Contact </a></li>
-                <i class="fa-solid fa-xmark" onclick="closemenu()"></i>
-            </ul>  
+                <li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#project-section">Projects</a></li>
+                    <li><a href="#contact-section">Contact</a></li>
+                    <i class="fa-solid fa-square-xmark" onclick="closemenu()"></i>
+                </li>
+            </ul>
             <i class="fa-solid fa-bars" onclick="openmenu()"></i>
         </nav>
     
             <!-- INTRO SECTION -->
     
-            <section class="intro-section">
+            <div class="intro-section">
                 <div class="intro">
                     <h1 id="name">IGBANIBO DENGI</h1>
                     <hr>
@@ -39,12 +41,14 @@
                         <a href=""><i class="fa-brands fa-square-twitter"></i></a>
                         <a href=""><i class="fa-brands fa-linkedin"></i></a>
                     </div>
-                    <div class="resume">
+                    <div class="contact-btn">
+                        <a href="#contact-section">Contact</a>
+                    </div>
+                    <div class="resume resume-btn">
                         <a href="">Résumé</a>
                     </div>
-                </div>
-                   
-            </section>
+                </div>    
+            </div>
     </header>
 
     <div class="container">
@@ -93,7 +97,10 @@
                             <i class="fa-brands fa-react"></i>
                             <h3 class="sub-titile">REACT</h3>
                         </div>
-                       
+                        <div class="skill-col">                        
+                            <i class="fa-brands fa-bootstrap"></i>
+                            <h3 class="sub-titile">BOOTSTRAP</h3>
+                        </div>
                     </div>
             </div>
 
@@ -110,7 +117,7 @@
                     <div class="project-col-2">
                         <h3>DIPPS MAKEOVER</h3>
                         <p>Technologies used: <span class="tech-used">HTML, CSS, JAVASCRIPT</span></p>
-                            <p>Dipps beautifyers is a make up studio that seeks to make booking of appointments and reaching out to current and future clients easier by through a website. <br> </p>
+                            <p>Dipps beautifyers is a make up studio that seeks to make booking of appointments and reaching out to current and future clients easier through a website. <br> </p>
                             <p>includes a gallery to view the artists previos work.</p>
                         <span class="project-link social-icons">
                             <a href="https://dippsbeautifyers.netlify.app/" target="_blank"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
@@ -158,13 +165,13 @@
                 <hr id="sub-title-hr">
                 <div class="contact">
                     <div class="contact-left">
-                    <p><i class="fa-solid fa-paper-plane"></i>igbanibodengi@gmail.com</p>
+                    <a href="#" class="email-link"><i class="fa-solid fa-paper-plane"></i>igbanibodengi@gmail.com</a>
                     <div class="social-icons">
                         <a href="https://github.com/igbanibo-Dengi?tab=repositories" target="_blank"><i class="fa-brands fa-square-github"></i></a>
                         <a href=""><i class="fa-brands fa-square-twitter"></i></a>
                         <a href=""><i class="fa-brands fa-linkedin"></i></a>
                     </div>
-                    <div class="resume resume-2">
+                    <div class="resume-2">
                         <a href="">Résumé</a>
                     </div>
                 </div>
