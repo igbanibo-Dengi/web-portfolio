@@ -233,7 +233,6 @@ nav ul li a:hover::after{
     50%{background-position:100% 50%}
     100%{background-position:0% 50%}
 }
-}
 
 #sub-title{
     font-size: 45px;
@@ -290,9 +289,9 @@ nav ul li a:hover::after{
 
 .skills-icons{
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
     justify-items: center;
-    grid-gap: 20px;
+    grid-gap: 10px;
     margin-top: 150px;
 }
 
@@ -329,7 +328,7 @@ nav ul li a:hover::after{
     display: flex;
     flex-wrap: wrap;
     gap: 5%;
-    background: rgb(9, 9, 9);
+    background: rgb(31, 30, 30);
     border-radius: 6px;
     padding: 30px 25px 30px 25px;
     margin-top: 25px;
@@ -417,9 +416,21 @@ nav ul li a:hover::after{
 }
 
 .email-link{
-    line-height: 1.5;
-    font-size: 18px;
+    text-decoration: none;
     color: white;
+    font-size: 18px;
+    padding: 8px 16px;
+    border-radius: 10px;
+    cursor: pointer;
+
+
+    background: linear-gradient(270deg, #5d0a5d, #d75dd3, #4f28ea, #ea2862, #b2ea28);
+    background-size: 1200% 1200%;
+
+    -webkit-animation: AnimationName 30s ease infinite;
+    -moz-animation: AnimationName 30s ease infinite;
+    -o-animation: AnimationName 30s ease infinite;
+    animation: AnimationName 30s ease infinite;
 }
 
 .social-icons{
