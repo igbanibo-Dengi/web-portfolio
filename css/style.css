@@ -45,9 +45,10 @@ nav{
     width: 100%;
     padding-left: 5%;
     padding-right: 5%;
-    padding-top: 25px;
-    margin-top: -135px;
+    padding-top: 10px;
+    padding-bottom: 10px;
     background: #000000;
+    z-index: 1;
 }
 
 nav ul li{
@@ -84,16 +85,8 @@ nav ul li a:hover::after{
 
 /* INTRO SECTION */
 
-.container{
-    padding: 0 5% 0 5%;
-    text-align: center;
-    color: #fff;
-    font-size: 18px;
-}
-
 .intro{
-    margin-top: 10%;
-    padding: 0% 5% 0% 5%;
+    padding: 10% 5% 0% 5%;
 }
 
 .intro h1{
@@ -150,10 +143,10 @@ nav ul li a:hover::after{
     background: linear-gradient(270deg,#d75dd3, #4f28ea, #ea2862, #b2ea28,  #5d0a5d);
     background-size: 1200% 1200%;
 
-    -webkit-animation: AnimationName 30s ease infinite;
-    -moz-animation: AnimationName 30s ease infinite;
-    -o-animation: AnimationName 30s ease infinite;
-    animation: AnimationName 30s ease infinite;
+    -webkit-animation: AnimationName 10s ease infinite;
+    -moz-animation: AnimationName 10s ease infinite;
+    -o-animation: AnimationName 10s ease infinite;
+    animation: AnimationName 10s ease infinite;
 }
 
 @-webkit-keyframes AnimationName {
@@ -240,6 +233,15 @@ nav ul li a:hover::after{
 
 
 /* ABOUT SECTION */
+
+
+.container{
+    padding: 0 5% 0 5%;
+    text-align: center;
+    color: #fff;
+    font-size: 18px;
+}
+
 #about{
     padding-top: 65px;
     margin-top: 50px;
@@ -324,20 +326,36 @@ nav ul li a:hover::after{
     margin-right: 5%;
     margin-left: 5%;
 }
-.row{
+
+.card {
+    box-sizing: border-box;
+    background: rgb(31, 30, 30);
+    border: 1px solid black;
+    box-shadow: 12px 17px 51px rgba(0, 0, 0, 0.22);
+    border-radius: 17px;
+    text-align: center;
+    cursor: pointer;
+    transition: all 0.5s;
     display: flex;
     flex-wrap: wrap;
-    gap: 5%;
-    background: rgb(31, 30, 30);
-    border-radius: 6px;
+    align-items: center;
+    justify-content: center;
+    user-select: none;
     padding: 30px 25px 30px 25px;
-    margin-top: 25px;
-    
-}
+    margin-top: 50px;
+    gap: 5%;
+    z-index: -3;
+  }
+  
+  .card:hover {
+    border: 1px solid white;
+    transform: scale(1.05);
+  }
+  
+  .card:active {
+    transform: scale(0.95) rotateZ(1.7deg);
+  }
 
-.row:hover{
-    border: 2px solid grey;
-}
 .first-project{
     margin-top: 100px;
 }
@@ -427,10 +445,10 @@ nav ul li a:hover::after{
     background: linear-gradient(270deg, #5d0a5d, #d75dd3, #4f28ea, #ea2862, #b2ea28);
     background-size: 1200% 1200%;
 
-    -webkit-animation: AnimationName 30s ease infinite;
-    -moz-animation: AnimationName 30s ease infinite;
-    -o-animation: AnimationName 30s ease infinite;
-    animation: AnimationName 30s ease infinite;
+    -webkit-animation: AnimationName 10s ease infinite;
+    -moz-animation: AnimationName 10s ease infinite;
+    -o-animation: AnimationName 10s ease infinite;
+    animation: AnimationName 10s ease infinite;
 }
 
 .social-icons{
